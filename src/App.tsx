@@ -84,7 +84,7 @@ function App() {
   
 
   return (
-    <main className="flex flex-col gap-0.5 justify-center items-center p-2 bg-gray-950">
+    <main className="flex flex-col gap-0.5 justify-center items-center p-2">
 
       {/*Header*/}
       <div>
@@ -111,7 +111,7 @@ function App() {
      <p>{weather.weather[0].main}</p>
      <p>{weather.weather[0].description}</p>
      <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="Weather Condition" />
-     <div className="flex flex-col gap-1">
+     <div className="flex flex-col gap-1.5">
      <p className="bg-gray-800 py-1 px-2 rounded-sm text-gray-200 text-sm">Feels Like {Math.round(weather.main.feels_like)}°C</p>
      <p className="bg-gray-800 py-1 px-2 rounded-sm text-gray-200 text-sm">Humidity {weather.main.humidity}%</p>
      <p className="bg-gray-800 py-1 px-2 rounded-sm text-gray-200 text-sm">Wind Speed {weather.wind.speed} m/s</p>
